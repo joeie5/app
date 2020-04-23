@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html lang="en">
+<head>
+<!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+       
+<meta charset="UTF-8">
+<title>Nesther Clinic</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="HandheldFriendly" content="True">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- CSS  -->
+<link rel="stylesheet" href="lib/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+<link rel="stylesheet" href="css/materialize.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- materialize icon -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Owl carousel -->
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
+<!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+<link rel="stylesheet" href="../../packages/core/css/framework7.bundle.min.css">
+		 <link rel="stylesheet" href="css/app.css">
+		 <link rel="apple-touch-icon" href="img/f7-icon-square.png">
+		 <link rel="icon" href="img/f7-icon.png">
+
+
+
+</head>
+<body id="homepage">
+<!-- BEGIN PRELOADING -->
+<div class="preloading">
+  <div class="wrap-preload">
+    <div class="cssload-loader"></div>
+  </div>
+</div>
+<!-- END PRELOADING -->
+<!-- HEADER -->
+<header id="header">
+<div class="nav-wrapper container">
+
+
+   <div class="header-menu-button">
+    <a href="#" data-activates="nav-mobile-category" class="button-collapse" id="button-collapse-category">
+    <div class="cst-btn-menu">
+      <i class="fas fa-align-left"></i>
+    </div>
+    </a>
+  </div>
+  <div class="header-logo">
+    <a href="#" class="nav-logo">Nesther Clinic</a>
+  </div>
+     <div class="header-icon-menu">
+    
+  </div>
+ 
+ 
+  
+</div>
+</header>
+<!-- END HEADER -->
+<!-- SIDE NAV-->
+<nav>
+
+<!-- LEFT SIDENAV-->
+<ul id="nav-mobile-category" class="side-nav">
+  <li class="profile">
+    <div class="li-profile-info">
+      <img src="img/profile4.jpg" alt="profile">
+      <h2>Profile</h2>
+      <a href="account.html">ACCOUNT</a>
+    </div>
+    
+    <div class="bg-profile-li">
+      <img alt="photo" src="img/Bg_pro.jpg">
+    </div>
+  </li>
+  <li>
+    <a class="waves-effect waves-blue" href="index.html"><i class="fas fa-home"></i>Home</a>
+  </li>
+  <li>
+    <a class="waves-effect waves-blue" href="about.html"><i class="fas fa-info-circle"></i>About Us</a>
+  </li>
+  <li>
+    <ul class="collapsible collapsible-accordion">
+      <li>
+        <div class="collapsible-header">
+          <i class="fas fa-columns"></i>Account <span><i class="fas fa-caret-down"></i></span>
+        </div>
+        <div class="collapsible-body">
+          <ul>
+            <li>
+              <a class="waves-effect waves-blue" href="login.html"><i class="fas fa-angle-right"></i>Sign In</a>
+            </li>
+            <li>
+              <a class="waves-effect waves-blue" href="signup.html"><i class="fas fa-angle-right"></i>Sign Up</a>
+            </li> 
+            
+            <li>
+              <a href="#"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
+            </li>
+            
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a class="waves-effect waves-blue" href="news-list.html"><i class="fas fa-newspaper"></i>Blog</a>
+  </li>
+  <li>
+    <a class="waves-effect waves-blue" href="create-blog.html"><i class="fas fa-pencil"></i>Create Blog</a>
+  </li>
+  <li>
+    <a class="waves-effect waves-blue" href="my-subscription.html"><i class="fas fa-columns"></i>My Subscription</a>
+  </li>
+  <li>
+    <a class="waves-effect waves-blue" href="view-subscribers"><i class="fas fa-columns"></i>View Subscribers</a>
+  </li>
+  <li>
+    <a href="setting.html"><i class="fas fa-cog"></i>Setting</a>
+  </li> 
+  <li>
+    <a href="contact.html"><i class="fas fa-envelope"></i>Contact Us</a>
+  </li>
+ 
+</ul>
+<!-- END LEFT SIDENAV-->
+<!-- RIGHT SIDENAV-->
+
+<!-- END RIGHT SIDENAV-->
+
+</nav>
+<!-- END SIDENAV-->
+<!-- MAIN SLIDER -->
+<div class="main-slider" data-indicators="true">
+  <div class="carousel carousel-slider " data-indicators="true">
+    <a class="carousel-item"><img src="img/slide1.jpg" alt="slider"></a>
+    <a class="carousel-item"><img src="img/slide2.jpg" alt="slider"></a>
+  </div>
+</div>
+<!-- END MAIN SLIDER -->
+<!-- CATEGORY -->
+<div class="section home-category">
+  <div class="container">
+     
+    <div class="row icon-service">
+      <div class="col s4 m4 l2"><a class="icon-content">
+        <div class="content fadetransition">
+          <div class="in-content">
+            <div class="in-in-content">
+              <img src="img/stethoscope.png" alt="category">
+              <h5><br>Consult a <br>Doctor</h5>
+            </div>
+          </div>
+        </div></a>
+      </div>
+      <div class="col s4 m4 l2"><a class="icon-content">
+        <div class="content fadetransition">
+          <div class="in-content">
+            <div class="in-in-content">
+              <img src="img/Report.png" alt="category">
+              <h5><br>Health<br>Information</h5>
+            </div>
+          </div>
+        </div></a>
+      </div>
+      <div class="col s4 m4 l2"><a href="specialty.html" class="icon-content">
+        <div class="content fadetransition">
+          <div class="in-content">
+            <div class="in-in-content">
+              <img src="img/Medical.png" alt="category">
+              <h5><br>Specialty</h5>
+            </div>
+          </div>
+        </div></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+     
+    <div class="row icon-service">
+      <div class="col s4 m4 l2"><a class="icon-content">
+        <div class="content fadetransition">
+          <div class="in-content">
+            <div class="in-in-content">
+              <img src="img/covid-19.png" alt="category">
+              <h5><br>Covid-19<br>Update</h5>
+            </div>
+          </div>
+        </div></a>
+      </div>
+      <div class="col s4 m4 l2"><a class="icon-content">
+        <div class="content fadetransition">
+          <div class="in-content">
+            <div class="in-in-content">
+              <img src="img/lassa.png" alt="category">
+              <h5><br>Lassa Fever<br>Update</h5>
+            </div>
+          </div>
+        </div></a>
+      </div>
+      <div class="col s4 m4 l2"><a class="icon-content">
+        <div class="content fadetransition">
+          <div class="in-content">
+            <div class="in-in-content">
+              <img src="img/Medical.png" alt="category">
+              <h5><br>Specialty</h5>
+            </div>
+          </div>
+        </div></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END CATEGORY -->
+<!-- PROMO -->
+<div class="section promo">
+  <div class="container">
+    <div class="col s12">
+      <img src="img/promo1.jpg" alt="promo">
+    </div>
+  </div>
+</div>
+<!-- END PROMO -->
+<!-- NEWS -->
+<div class="section list-news">
+  <div class="container">
+    <div class="row row-title">
+      <div class="col s12">
+        <div class="section-title">
+          <span class="theme-secondary-color">HEALTH</span> TIPS
+        </div>
+      </div>
+    </div>
+    <div class="row row-list-news">
+      <div class="col s12">
+        
+        <!-- News item-->
+        <div class="news-item">
+          <div class="news-tem-image">
+            <img src="img/onion.jpg">
+          </div>
+          <div class="news-item-info">
+            <div class="list-news-title">
+              Benefits of Onions
+            </div>
+            Consectetur adipiscing elit, ut labore et dolore magna aliqua...
+            <a href="news-page.html" class="readmore">Read More</a>
+          </div>
+        </div>
+        <!-- End news item-->
+        <!-- News item-->
+        <div class="news-item">
+          <div class="news-tem-image">
+            <img src="img/drugs.jpg">
+          </div>
+          <div class="news-item-info">
+            <div class="list-news-title">
+              Self Medication Dangers
+            </div>
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+            <a href="news-page.html" class="readmore">Read More</a>
+          </div>
+        </div>
+        <!-- End news item-->
+        <!-- News item-->
+        <div class="news-item">
+          <div class="news-tem-image">
+            <img src="img/pregnant_woman.jpg">
+          </div>
+          <div class="news-item-info">
+            <div class="list-news-title">
+              Pregnancy Tips
+            </div>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui...
+            <a href="news-page.html" class="readmore">Read More</a>
+          </div>
+        </div>
+        <!-- End news item-->
+        <div class="more-news-list">
+          <a class="more-btn" href="news-list.html">See More News &gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END NEWS -->
+<!-- TESTIMONIAL  -->
+<div class="section testimonial">
+  <div class="testimonial-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="section-title">
+             CUSTOMER REVIEWS
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="wrap-item-testimonial">
+          <div id="testimonial-item" class="owl-carousel">
+            <!-- item -->
+            <div class="item">
+              <div class="item-testimonial">
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="img/profile4.jpg" alt="profile">
+                  </div>
+                  <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+                <div class="client-content">
+                  <p>
+                     Best Service, Good Luck With Sale!
+                  </p>
+                  <div class="client-title">
+                    <h4>John Doe</h4>
+                    <h5>Photographer</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+            <!-- item -->
+            <div class="item">
+              <div class="item-testimonial">
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="img/profile4.jpg" alt="profile">
+                  </div>
+                  <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+                <div class="client-content">
+                  <p>
+                     Best place and fast respond, Thank You!
+                  </p>
+                  <div class="client-title">
+                    <h4>Elly Doe</h4>
+                    <h5>Entrepreneur</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item -->
+            <!-- item -->
+            <div class="item">
+              <div class="item-testimonial">
+                <div class="client-info">
+                  <div class="client-img">
+                    <img src="img/profile4.jpg" alt="profile">
+                  </div>
+                  <div class="rating">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                </div>
+                <div class="client-content">
+                  <p>
+                     Good Product, I like this..
+                  </p>
+                  <div class="client-title">
+                    <h4>Tayoo Doe</h4>
+                    <h5>Driver</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end item --></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background-testimonial"></div>
+</div>
+<!-- END TESTIMONIAL  -->
+<!-- SUBSCRIBE -->
+<div class="section subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="section-title">SUBSCRIBE</div>
+        <p class="center">Get Instant or Monthly consultations and drug description from a Medical Doctor</p>
+        <div class="row">
+          <div class="input-field col s12 m6 l4 offset-m3 offset-l4 center">
+            <a href="subscription.html"><input class="waves-effect waves-light btn" value="SUBSCRIBE" type="submit"></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-subscribe">
+    <img src="img/sub_background.jpg">
+  </div>
+</div>
+<!-- END SUBSCRIBE -->
+
+
+<!--END CHAT SESSION-->
+<!-- FOOTER  -->
+<footer id="footer">
+<div class="container">
+  <div class="row row-footer-icon">
+    <div class="col s12">
+      <div class="footer-sosmed-icon ">
+        <div class="wrap-circle-sosmed ">
+          <a href="#">
+          <div class="circle-sosmed">
+            <i class="fab fa-instagram"></i>
+          </div>
+          </a>
+        </div>
+        <div class="wrap-circle-sosmed ">
+          <a href="#">
+          <div class="circle-sosmed">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          </a>
+        </div>
+        <div class="wrap-circle-sosmed ">
+          <a href="#">
+          <div class="circle-sosmed">
+            <i class="fab fa-twitter"></i>
+          </div>
+          </a>
+        </div>
+        <div class="wrap-circle-sosmed ">
+          <a href="#">
+          <div class="circle-sosmed">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row copyright">
+     2020 <span>Nesther Clinic</span>, All rights reserved.
+  </div>
+</div>
+</footer>
+<!-- END FOOTER -->
+<!-- Script -->
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBX10WIVV8Yo8ZwpyOTKvnhnWVr8yHhpHM",
+    authDomain: "nesther-clinic.firebaseapp.com",
+    databaseURL: "https://nesther-clinic.firebaseio.com",
+    projectId: "nesther-clinic",
+    storageBucket: "nesther-clinic.appspot.com",
+    messagingSenderId: "1088371907758",
+    appId: "1:1088371907758:web:1a7e4f075f24f66e31a13f",
+    measurementId: "G-9VR5P40G2L"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+//make const auth: restore references
+const auth = firebase.auth();
+const db = firestore.firebase();
+
+// Update firestore settings
+db.settings({ timestampsInSnapshots: true });
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<!-- Owl carousel -->
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+<!-- Slick JS -->
+<script src="lib/slick/slick/slick.min.js"></script>
+<!-- Custom script -->
+<script src="js/custom.js"></script>
+
+<script src="../../packages/core/js/framework7.bundle.min.js"></script>
+	   <script src="js/routes.js"></script>
+	   <script src="js/app.js"></script>
+	   
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
